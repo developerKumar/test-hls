@@ -9,8 +9,11 @@ function App() {
     setUrl(e.target.value);
     loadHlsUrl(e.target.value);
   };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     loadHlsUrl();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const loadHlsUrl = (link) => {
     const Hls = window.Hls;
